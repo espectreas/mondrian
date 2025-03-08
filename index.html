@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    
+    body{
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+    }
+
+    #fundo
+    {
+      width: 748px;
+      height: 746px;
+      background-color: black;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+
+    
+
+    .vermelha
+    {
+      background-color: #E72F24;
+    }
+
+    .azul
+    {
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+
+    .amarela
+    {
+      background-color: #F9D01E;
+      order: 2
+    }
+
+    .preta
+    {
+      background-color: #232629;
+      order: 3
+    }
+
+    .branca
+    {
+      background-color: #F0F1EC;
+    }
+
+    .um
+    {
+      grid-column: 2/5;
+    }
+
+    .dois
+    {
+      grid-row: 2/4
+    }
+
+    .tres
+    {
+      grid-column: 2/4;
+      grid-row: 2/4;
+    }
+
+    .quatro
+    {
+      order: 1;
+      grid-row: 3/ 5
+    }
+
+    .cinco
+    {
+      order: 1;
+    }
+
+    #titulo
+    {
+      color: white;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+    <h1 id="titulo">Projeto Mondrian</h1>
+    <div id="fundo">
+      <div class="vermelha"></div>
+      <div class="branca um"></div>
+      <div class="branca dois"></div>
+      <div class="branca tres"></div>
+      <div class="branca quatro"></div>
+      <div class="branca cinco"></div>
+      <div class="azul"></div>
+      <div class="amarela"></div>
+      <div class="preta"></div>
+    </div>
+    <h3 id="titulo">Confira o código ou baixe a extensão Pesticide para ver as divs ;)</h3>
+</body>
+
+</html>
